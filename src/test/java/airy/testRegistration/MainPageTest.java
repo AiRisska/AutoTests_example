@@ -70,6 +70,8 @@ public class MainPageTest extends TestBase {
     }
 
     @Test
+    @Description("Open catalog")
+    @DisplayName("Открытие меню каталога")
     void catalogMenuIsVisible() {
         step("Открываем главную страницу", () -> {
             open("https://www.sdvor.com/");
