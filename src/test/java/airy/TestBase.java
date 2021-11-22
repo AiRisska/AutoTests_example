@@ -30,7 +30,7 @@ public class TestBase {
         String login=s.login();
         String password=s.password();
 
-//        Configuration.remote = format("https://%s:%s@%s",login,password,url);
+        Configuration.remote = format("https://%s:%s@%s",login,password,url);
     }
 
     @AfterEach
