@@ -70,6 +70,18 @@ task main_page(type: Test) {
     }
 }
 
+task search_test(type: Test) {
+    useJUnitPlatform {
+        includeTags ("search")
+    }
+}
+
+task product_test(type: Test) {
+    useJUnitPlatform {
+        includeTags ("ProductCard")
+    }
+}
+
 
 task demowebshop(type: Test) {
     useJUnitPlatform {
