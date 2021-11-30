@@ -20,7 +20,7 @@ public interface ConfigProject extends Config {
     String browserVersion();
     @DefaultValue("1920x1080")
     String browserSize();
-    String browserMobileView();
+//    String browserMobileView();
     String remoteDriverUrl();
     String videoStorage();
 
