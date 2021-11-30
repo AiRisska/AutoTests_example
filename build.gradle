@@ -82,6 +82,12 @@ task product_test(type: Test) {
     }
 }
 
+task shopcart_test(type: Test) {
+    useJUnitPlatform {
+        includeTags ("ShoppingCart")
+    }
+}
+
 
 task demowebshop(type: Test) {
     useJUnitPlatform {

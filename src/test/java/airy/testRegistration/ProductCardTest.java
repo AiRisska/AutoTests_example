@@ -39,17 +39,16 @@ public class ProductCardTest extends TestBase {
     }
 
     @ParameterizedTest
-    @ValueSource(strings={"обои", "клей"})
-    @Description("Search test")
-    @DisplayName("Search text")
-    void consoleShouldNotHaveErrorsTest(String value) {
-        step("Open url 'https://www.sdvor.com/'", () ->
-                open("https://www.sdvor.com/"));
+    @ValueSource(strings={"Код товара", "Цена за шт"})
+    @Description("Test Product Card")
+    @DisplayName("Search product parameter {0}")
+    void cardShouldHaveAttribute(String value) {
+        step("Open product card 'Шуруп'", () ->
+                open("https://www.sdvor.com/tmn/product/shurup-s-shestigrannoj-golovkoj-12h140-mm-66842/"));
 
-        step("Поиск по значению "+value, () -> {
-            $(byName("search")).click();
-            $(byName("search")).setValue(value).pressEnter();
-            $(".tysidwl").shouldHave(text(value));
+        step("Поиск параметра товара по значению "+value, () -> {
+            $(byAttribute("data-testid","ProductCardMain"))
+                    .shouldHave(text(value));
         });
     }
 }
