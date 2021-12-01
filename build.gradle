@@ -87,10 +87,3 @@ task shopcart_test(type: Test) {
         includeTags ("ShoppingCart")
     }
 }
-
-
-task demowebshop(type: Test) {
-    useJUnitPlatform {
-        includeTags ("demowebshop")
-    }
-}
