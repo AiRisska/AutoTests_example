@@ -2,6 +2,7 @@ package airy.testRegistration;
 
 import airy.TestBase;
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -14,6 +15,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @Tag("ShoppingCart")
+@Feature("Shopping Cart")
 public class ShoppingCartTest extends TestBase {
 
     @Test
