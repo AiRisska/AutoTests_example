@@ -8,7 +8,7 @@ public class Project {
 /*    public static boolean isWebMobile() {
         return !config.browserMobileView().equals("");
     }
-*/
+
     public static boolean isRemoteWebDriver() {
 
         return !config.remoteDriverUrl().equals("");
@@ -18,4 +18,5 @@ public class Project {
 
         return !config.videoStorage().equals("");
     }
+    */
 }
