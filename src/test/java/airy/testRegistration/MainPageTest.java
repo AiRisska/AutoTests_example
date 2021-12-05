@@ -76,12 +76,16 @@ public class MainPageTest extends TestBase {
     @DisplayName("Открытие меню каталога")
     void catalogMenuIsVisible() {
         step("Открываем главную страницу", () -> {
-            open("https://www.sdvor.com/");
-            $(".c172s2wi").click();
+            open("https://www.sdvor.com/?city=tmn");
+            //$(".c172s2wi").click();
+            //hzyb9p1
         });
 
         step("Нажатие на 'Каталог'", () ->
-                $(".ccguyf0").click());
+//                $(".ccguyf0").click()
+                        $(".hzyb9p1").click()
+//                $(byAttribute("data-testid","CatalogButton")).click()
+        );
 
         step("Проверка, что в списке есть подпункт 'Строительные смеси, грунтовки' ", () -> {
             String expectedTitle = "Строительные смеси, грунтовки";

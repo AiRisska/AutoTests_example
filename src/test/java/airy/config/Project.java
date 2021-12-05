@@ -13,10 +13,10 @@ public class Project {
 
         return !config.remoteDriverUrl().equals("");
     }
-
+*/
     public static boolean isVideoOn() {
 
         return !config.videoStorage().equals("");
     }
-    */
+
 }

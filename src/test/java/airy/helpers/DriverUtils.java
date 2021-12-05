@@ -32,7 +32,7 @@ public class DriverUtils {
         return getWebDriver().getPageSource().getBytes(StandardCharsets.UTF_8);
     }
 
-/*    public static URL getVideoUrl(String sessionId) {
+    public static URL getVideoUrl(String sessionId) {
         String videoUrl = Project.config.videoStorage() + sessionId + ".mp4";
 
         try {
@@ -43,7 +43,7 @@ public class DriverUtils {
         }
         return null;
     }
-*/
+
     public static String getConsoleLogs() { // todo refactor
 
         return String.join("\n", Selenide.getWebDriverLogs(BROWSER));
