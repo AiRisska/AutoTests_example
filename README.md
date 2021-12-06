@@ -60,7 +60,14 @@ Demo notifications:
 Screen from Jira    
 <img src="https://github.com/AiRisska/AutoTests_example/blob/master/img/JiraCloudTask.png">
 
+# Allure Reports    
+<a target="_blank" href="https://jenkins.autotests.cloud/job/SDvor.com/34/allure/#graph"> <code><img height="30" src="https://starchenkov.pro/qa-guru/img/skills/Allure_Report.svg"></code> Allure reports </a>.
 
+Screen from reports    
+<img src="https://github.com/AiRisska/AutoTests_example/blob/master/img/AllureReports.png">
+
+Video from report
+<img src="https://github.com/AiRisska/AutoTests_example/blob/master/img/test%20results.gif">
 
 # USAGE examples
 
