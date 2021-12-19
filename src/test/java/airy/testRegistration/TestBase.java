@@ -1,4 +1,4 @@
-package airy;
+package airy.testRegistration;
 
 import airy.config.ConfigProject;
 import airy.helpers.Attach;

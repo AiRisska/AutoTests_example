@@ -1,6 +1,5 @@
 package airy.testRegistration;
 
-import airy.TestBase;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
@@ -19,21 +18,21 @@ import static io.qameta.allure.Allure.step;
 public class ShoppingCartTest extends TestBase {
 
     @Test
-    @Description("Shopping Cart on Main Page")
-    @DisplayName("Search Shopping Cart on Main Page")
+    @Description("Корзина для покупок на главной странице")
+    @DisplayName("Проверка на наличие корзины на главной странице")
     void mainPageShouldHaveShoppingCartTest() {
-        step("Open url 'https://www.sdvor.com/'", () ->
+        step("Открытие url 'https://www.sdvor.com/'", () ->
                 open("https://www.sdvor.com/"));
-        step("Search shopping cart", () -> {
+        step("Поиск текста 'Корзина' в блоке", () -> {
             $(".c1hh5p11").shouldHave(text("Корзина"));
         });
     }
 
     @Test
-    @Description("Open and move Shopping Cart")
-    @DisplayName("Open and move in Shopping Cart from Product Card")
+    @Description("Открытие и переход в корзину")
+    @DisplayName("Открытие и переход в корзину из карточки продукта")
     void openAndMoveShoppingCartTest() {
-        step("Open product card 'Шуруп'", () ->
+        step("Открыть карточки продукта 'Шуруп'", () ->
                 open("https://www.sdvor.com/tmn/product/shurup-s-shestigrannoj-golovkoj-12h140-mm-66842/"));
 
         step("Добавить товар в корзину", () -> {

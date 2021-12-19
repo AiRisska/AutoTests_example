@@ -1,6 +1,5 @@
 package airy.testRegistration;
 
-import airy.TestBase;
 import airy.helpers.DriverUtils;
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Description;
@@ -21,13 +20,13 @@ public class MainPageTest extends TestBase {
 
 
     @Test
-    @Description("Test: checked text in header on main page")
+    @Description("Test: проверка текста в header страницы")
     @DisplayName("Page title should have header text")
     void titleTest() {
-        step("Open url 'https://www.sdvor.com/'", () ->
+        step("Открытие url 'https://www.sdvor.com/'", () ->
                 open("https://www.sdvor.com/"));
 
-        step("Page title should have text 'Строительный Двор – интернет-магазин стройматериалов'", () -> {
+        step("Заголовок страницы содержит текст: 'Строительный Двор – интернет-магазин стройматериалов'", () -> {
             String expectedTitle = "Строительный Двор – интернет-магазин стройматериалов";
             String actualTitle = title();
 
@@ -37,12 +36,12 @@ public class MainPageTest extends TestBase {
 
     @Test
     @Description("Тест: проверка на наличие ошибок в консоли сайта")
-    @DisplayName("Page console log should not have errors")
+    @DisplayName("Наличие ошибок в консоли страницы")
     void consoleShouldNotHaveErrorsTest() {
-        step("Open url 'https://www.sdvor.com/'", () ->
+        step("Открытие url 'https://www.sdvor.com/'", () ->
                 open("https://www.sdvor.com/"));
 
-        step("Console logs should not contain text 'SEVERE'", () -> {
+        step("В логах отсутствует текст: 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
             String errorText = "SEVERE";
 
@@ -72,7 +71,7 @@ public class MainPageTest extends TestBase {
     }
 
     @Test
-    @Description("Open catalog")
+    @Description("Открытие каталога товаров")
     @DisplayName("Открытие меню каталога")
     void catalogMenuIsVisible() {
         step("Открываем главную страницу", () -> {
