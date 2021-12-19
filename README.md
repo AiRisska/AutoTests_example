@@ -1,13 +1,3 @@
-<!--
-- Команды запуска тестов из терминала с пояснением ключей
-- История со скриншотами - где что происходит, запускается
-- Гифка с тестом (из видео в selenoid)
-- Иконки используемого стека для красоты
-- Emoji https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
-- Маркдаун для разметки https://guides.github.com/features/mastering-markdown
-- Примеры README - https://github.com/matiassingers/awesome-readme
-
--->
 
 ### :electron:  Code stack:    
 
@@ -45,6 +35,14 @@ Test Statistics from dashbord Allure TestOps
 Start collect with parameters    
 <img src="https://github.com/AiRisska/AutoTests_example/blob/master/img/JenkinsStartJobs.png">
 
+where {TAG_TEST} is replaced with the next value:
+* test - start all tests, 
+* main_page - start tests for main page, 
+* search_test - start tests for search, 
+* product_test - start tests for product card, 
+* shopcart_test - start tests for shopping cart
+
+
 Allure History Trend from Jenkins    
 <img src="https://github.com/AiRisska/AutoTests_example/blob/master/img/AllureHistoryTrend.png">
 
@@ -68,6 +66,9 @@ Screen from reports
 
 Video from report
 <img src="https://github.com/AiRisska/AutoTests_example/blob/master/img/test%20results.gif">
+
+<!--
+
 
 # USAGE examples
 
@@ -111,3 +112,4 @@ Serve report:
 allure serve build/allure-results
 ```
 
+-->
